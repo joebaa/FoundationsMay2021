@@ -1,0 +1,28 @@
+.container{
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 960px;
+}
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+h1, h3, h4, h5, p{
+    margin-bottom: 22px;
+}
+<a class="btn btn-alt">...</a>
+.btn {
+    border-radius: 5px;
+    display: inline-block;
+    margin: 0;
+}
+.btn-alt {
+    border:1 px solid #dfe2ea;
+    padding: 10 px 30px;
+}
+<header class="container">...</header>
+<footer class="container">...</footer>
