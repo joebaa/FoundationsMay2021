@@ -1,3 +1,10 @@
+/*
+===============================
+Grid
+===============================
+*/
+
+
 .container{
     margin: 0 auto;
     padding-left: 30px;
@@ -10,19 +17,34 @@
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
+/*
+====================================
+Typography
+====================================
+*/
 }
 h1, h3, h4, h5, p{
     margin-bottom: 22px;
 }
-<a class="btn btn-alt">...</a>
+/*
+====================================
+Buttons
+====================================
+*/
 .btn {
     border-radius: 5px;
     display: inline-block;
     margin: 0;
 }
 .btn-alt {
-    border:1 px solid #dfe2ea;
+    border:1 px solid #fff;
     padding: 10 px 30px;
 }
-<header class="container">...</header>
-<footer class="container">...</footer>
+/*
+====================================
+Home
+====================================
+*/
+.hero{
+    padding:22px 80px 66px 80px;
+}
