@@ -1,3 +1,8 @@
+body {
+    background-color: #11073fe3;
+    color: rgb (39, 50, 110)
+    font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helveltica, Arial, sans-serif;
+}
 /*
 ===============================
 Grid
@@ -45,7 +50,14 @@ Home
 ====================================
 */
 .hero{
+    line-height: 44px;
     padding:22px 80px 66px 80px;
+}
+.hero h2{
+    font-size: 36px;
+}
+.hero p{
+    font-size: 24px;
 }
 .group:before,
 .group:after {
@@ -66,12 +78,37 @@ Home
     padding-top: .5em;
     padding-right: 1em;
 }
+
+h1, h2, h3, h4 {
+    color: #6c89db;
+}
+h1 {
+    font-size: 36px;
+    line-height: 44px;
+}
+h2 {
+    font-size: 24px;
+    line-height: 44px;
+}
+h3 {
+    font-size: 21px;
+}
+h4 {
+    font-size: 18px;
+}
+h5{
+    color: #4568c9;
+    font-size: 14px;
+    font-weight: 400;
+}
 /*
 ================================
 Primary Footer
 ===============================
 */
 .primary-footer {
+    color: #6c89db;
+    font-size: 14px;
     padding-bottom: 44px;
     padding-top: 44px;
 }
@@ -107,3 +144,26 @@ Primary Footer
 }
 
 
+strong {
+    font-weight: 400;
+}
+cite,
+em{
+    font-style: italic;
+}
+a {
+    color: #6c89db;
+}
+a:hover {
+    color: #a9b2b9;
+}
+.tagline {
+    margin: 66px 0 22px 0;
+}
+.primary-nav {
+    font-size: 14px;
+    font-weight: 400;
+}
+.teaser a:hover h3 {
+    color: #a9b2b9;
+}
