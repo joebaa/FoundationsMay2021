@@ -63,7 +63,22 @@ Clearfix
 Rows
 ====================================
 */
-
+.row,
+.row-alt {
+    min-width: 960px;
+}  
+.row {
+    min-width: 960px;
+    padding: 66px 0 44px 0;
+  }  
+.row-alt {
+    background: #cbe2c1;
+    background: -webkit-linear-gradient(to right,   #8ea4cf, #b3d7e5);
+    background: -moz-linear-gradient(to right, #8ea4cf, #b3d7e5);
+    background: linear-gradient(to right, #8ea4cf, #b3d7e5);
+    padding: 44px 0 22px 0;
+  }
+ 
 
 /*
 ====================================
@@ -120,6 +135,14 @@ a {
 a:hover {
     color: #a9b2b9;
 }
+.primary-header a,
+.primary-footer a {
+    color: #fff;
+  }
+  .primary-header a:hover,
+  .primary-footer a:hover {
+    color: #acb8d8;
+  }
 /*
 ====================================
 Buttons
@@ -127,13 +150,22 @@ Buttons
 */
 .btn {
     border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
     display: inline-block;
+    font-weight: 400;
+    letter-spacing: .5px;
     margin: 0;
+    text-transform: uppercase;
 }
 .btn-alt {
     border: 1px solid #fff;
     padding: 10px 30px;
 }
+.btn-alt:hover {
+    background: #fff;
+    color: #688cc9;
+  }  
 
 /*
 ====================================
@@ -154,6 +186,7 @@ Primary Header
     font-size: 14px;
     font-weight: 400;
 }
+  
 /*
 ====================================
 Primary Footer
@@ -169,6 +202,7 @@ Primary Footer
     float: left;
     font-weight: 400;
 }
+  
 /*
 ====================================
 Navigation
@@ -181,8 +215,10 @@ Home
 ====================================
 */
 .hero{
+    color: #fff;
     line-height: 44px;
     padding:22px 80px 66px 80px;
+    text-align: center;
 }
 .hero h2{
     font-size: 36px;
