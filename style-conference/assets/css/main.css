@@ -68,11 +68,11 @@ Rows
     min-width: 960px;
 }  
 .row {
-    min-width: 960px;
+    background-color: #fff;
     padding: 66px 0 44px 0;
   }  
 .row-alt {
-    background: #cbe2c1;
+    background: #c1d0e2;
     background: -webkit-linear-gradient(to right,   #8ea4cf, #b3d7e5);
     background: -moz-linear-gradient(to right, #8ea4cf, #b3d7e5);
     background: linear-gradient(to right, #8ea4cf, #b3d7e5);
@@ -85,7 +85,7 @@ Rows
 Typography
 ====================================
 */
-}
+
 h1, h3, h4, h5, p{
     margin-bottom: 22px;
 }
@@ -123,6 +123,13 @@ em{
 Leads
 ====================================
 */
+.lead {
+    text-align: center;
+}
+.lead p {
+    font-size: 21px;
+    line-height: 33px;
+}
 
 /*
 ====================================
@@ -208,6 +215,15 @@ Primary Footer
 Navigation
 ====================================
 */
+.nav li {
+    display: inline-block;
+    margin: 0 10px;
+    vertical-align: top;
+}
+.nav li:last-child {
+    margin-right: 0;
+  }
+  
 
 /*
 ====================================
@@ -234,6 +250,13 @@ Home
 Speakers
 ====================================
 */
+.speaker-info {
+    border: 1px solid #dfe2e5;
+    border-radius: 5px;
+    margin-top: 88px;
+    padding: 22px 0;
+    text-align: center;
+  }  
 
 /*
 ====================================
