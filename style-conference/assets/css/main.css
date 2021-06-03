@@ -110,6 +110,7 @@ h5{
     color: #4568c9;
     font-size: 14px;
     font-weight: 400;
+    text-transform: uppercase;
 }
 strong {
     font-weight: 400;
@@ -138,9 +139,13 @@ Links
 */
 a {
     color: #6c89db;
+    text-decoration: none;
 }
 a:hover {
     color: #a9b2b9;
+}
+p a {
+    border-bottom: 1px solid #dfe2e5;
 }
 .primary-header a,
 .primary-footer a {
@@ -200,6 +205,8 @@ Primary Header
 .primary-nav {
     font-size: 14px;
     font-weight: 400;
+    letter-spacing: .5px;
+    text-transform: uppercase;
 }
   
 /*
@@ -216,13 +223,15 @@ Primary Footer
 .primary-footer small {
     float: left;
     font-weight: 400;
-}
-  
+} 
 /*
 ====================================
 Navigation
 ====================================
 */
+.nav {
+    text-align: right;
+}
 .nav li {
     display: inline-block;
     margin: 0 10px;
