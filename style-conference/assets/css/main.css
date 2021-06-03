@@ -175,12 +175,12 @@ Buttons
   }  
   .btn-default {
     border: 0;
-    background: #648880; /* use 6c89db */
+    background: #6c89db;
     padding: 11px 30px;
     font-size: 14px;
 }
 .btn-default:hover {
-    background: #77a198; /* use 778da148 */
+    background: #778da148;
 }
 /*
 ====================================
@@ -298,8 +298,8 @@ select,
 textarea {
     font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-.register-group {  /* should be .register-group label  */
-    color: 648880; /* forgot # - also use 6c89db */
+.register-group label {  
+    color: #6c89db;
     cursor: pointer;
     font-weight: 400;
 }
