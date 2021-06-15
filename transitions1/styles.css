@@ -1,28 +1,28 @@
-.move {
+#move {
     position: absolute;
     top: 0;
     transform: translate(-50%,0);
     left: 50%;
 }
-.size {
+#size {
     position: absolute;
     top: 0;
     transform: translate(-50%,0);
     left: 55%;
 }
-.opacity {
+#opacity {
     position: absolute;
     top: 0;
     transform: translate(-50%,0);
     left: 60%;
 }
-.color {
+#color {
     position: absolute;
     top: 0;
     transform: translate(-50%,0);
     left: 65%;
 }
-.block1:hover {
+#block1 {
     position: absolute;
     height: 10%;
     width: 10%;
@@ -30,9 +30,9 @@
     left: 0;
     background-color: 255, 255, 0, 0.5;
     opacity: 1;
-    transition-timing-function: ease(3s);
+    transition-timing-function: all 3s ease;
 }
-.block2 {
+#block2 {
     position: absolute;
     height: 10%;
     width: 10%;
@@ -42,18 +42,18 @@
     transform: translate(-50%, -50%);
 }
 
-.move:hover {
-    position: 50%;
+#move:hover {
+    top: 50%;
     left: 50%;
     transform: translate(-50%,-50%)
 }
-.size:hover {
+#size:hover {
     width: 20%;
     height: 20%;
 }
-.opacity:hover {
+#opacity:hover {
     opacity: .25;
 }
-.color:hover {
+#color:hover {
     background-color: green;
 }
