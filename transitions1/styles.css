@@ -1,0 +1,59 @@
+.move {
+    position: absolute;
+    top: 0;
+    transform: translate(-50%,0);
+    left: 50%;
+}
+.size {
+    position: absolute;
+    top: 0;
+    transform: translate(-50%,0);
+    left: 55%;
+}
+.opacity {
+    position: absolute;
+    top: 0;
+    transform: translate(-50%,0);
+    left: 60%;
+}
+.color {
+    position: absolute;
+    top: 0;
+    transform: translate(-50%,0);
+    left: 65%;
+}
+.block1:hover {
+    position: absolute;
+    height: 10%;
+    width: 10%;
+    top: 0;
+    left: 0;
+    background-color: 255, 255, 0, 0.5;
+    opacity: 1;
+    transition-timing-function: ease(3s);
+}
+.block2 {
+    position: absolute;
+    height: 10%;
+    width: 10%;
+    top: 50%;
+    left: 50%;
+    background-color: 255, 0, 0, 0.5;
+    transform: translate(-50%, -50%);
+}
+
+.move:hover {
+    position: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+}
+.size:hover {
+    width: 20%;
+    height: 20%;
+}
+.opacity:hover {
+    opacity: .25;
+}
+.color:hover {
+    background-color: green;
+}
