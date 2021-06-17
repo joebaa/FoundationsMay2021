@@ -61,7 +61,7 @@ function simpleSlider(element = '#simple-slider', auto = false, pause) {
     }
 
     //function that starts autoplay  and resets it incase user navigated (clciked prev or next)
-    function autoPlay() {
+    function AutoPlay() {
         clearInterval(autoPlay);
 
         if (auto == true)
@@ -78,7 +78,7 @@ function simpleSlider(element = '#simple-slider', auto = false, pause) {
     //detect if user cliked on arrow for previous slide and fade prev slide if did
     $(prevSlide).click(function(e) {
         e.preventDefault();
-        fadeNext();
+        fadePrev();
         AutoPlay();
     });
     //Start auto if auto set to true
