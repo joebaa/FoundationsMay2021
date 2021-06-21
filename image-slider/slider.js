@@ -6,15 +6,15 @@ function simpleSlider(element = '#simple-slider', auto = false, pause) {
     //Slides container
     var slidesCont = $this.children('.slides-container');
     //Get all slides 
-    var slides = slidesCont.children('.pager');
+    var slides = slidesCont.children('.slide');
 
     //Get pager div
-    var pager = $this.children('.pager')
+    var pager = $this.children('.pager');
 
     //Get previous / Next Links
-    var arrowsCont = $this.children('.arrows')
-    var prevSlide = arrowsCont.children('.prev')
-    var nextSlide = arrowsCont.children('.next')
+    var arrowsCont = $this.children('.arrows');
+    var prevSlide = arrowsCont.children('.prev');
+    var nextSlide = arrowsCont.children('.next');
 
     //Total Slides Count
     var slidesCount = slides.length;
@@ -36,6 +36,7 @@ function simpleSlider(element = '#simple-slider', auto = false, pause) {
         if (currentSlideIndex == slidesCount) {
             currentSlide = slides.first();
             currentSlide.delay(500).addClass('active').fadeIn(700);
+            currentSlideIndex = 1;
         } else {
             currentSlideIndex++;
             currentSlide = currentSlide.next();
