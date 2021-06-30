@@ -1,0 +1,89 @@
+html, body {
+    font-family: 'Nanum Gothic', sans-serif;
+    background-color: #white;
+    color: darkgrey;
+    margin: 0;
+}
+#name {
+    font-size: 4em;
+    padding: 20px;
+}
+
+.container {
+    width: 70%;
+    height: 20vh;
+    align-items: center;
+    color: darkgrey;
+    background-color: white;
+    margin-top: 7vh;
+    border: solid 1px #2A3166;
+}
+#div2 {
+    margin-top: 20vh;
+    width: 70%;
+
+}
+
+#banner {
+    padding: 40px;
+    background-color: #CAE7DF;
+    text-align: center;
+    list-style-type: none;
+    display: flex;
+    font-size: 1em;
+    color: white;
+    justify-content: space-around;
+    text-decoration: none;
+}
+
+#banner a {
+    margin-left: 3vw;
+    margin-right: 3vw;
+    font-size: 2em;
+    line-height: 5rem;
+    vertical-align: middle;
+    list-style-type: none;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    display: inline-flexbox;
+    justify-content: space-between;
+    font-size: 2.5em;
+
+}
+a {
+    text-decoration: none;
+    color: white; 
+}
+
+h1 {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+
+aside {
+    background-color: white;
+    float: right;
+    height: 50vh;
+    align-content: center;
+    padding: 30px;
+    width: 30%;
+    position: ;
+    border-left: ;
+}
+#totheright {
+    text-align: center;
+    top: -30%;
+}
+
+nav:after {
+    content: '';
+    display: block;
+    clear: both
+  }
+
+  p {
+      text-align: center;
+  }
