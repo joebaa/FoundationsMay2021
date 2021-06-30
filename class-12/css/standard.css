@@ -1,0 +1,97 @@
+body {
+    background-image: url("../images/hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+}
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    text-decoration: none;
+}
+
+#header-container {
+    
+    width: 100%;
+    text-align: center;
+    background-color: navy;
+    line-height: 3em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-family: Poppins, sans-serif;
+    color: white;
+}
+h1 {
+    text-align: center;
+}
+#blanka {
+    font-size: 1em;
+    color: white;
+    font-family: Poppins;
+    text-emphasis: bold;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    justify-content: space-around;
+    text-decoration: none;
+}
+#hello {
+    font-family: 'League Script', cursive;
+    color: white;
+    font-size: 3em;
+    
+}
+
+#home {
+    text-align: center;
+    vertical-align: middle;
+    min-height: 10em;
+}
+
+main {
+    font-size: 2em;
+    position: absolute;
+    left:50%;
+    top: 50%;
+    transform: translate(-50%, calc(-50% + 2em));
+    white-space: nowrap;
+    text-align: center;
+    color: white;
+    font-family: Poppins;
+}
+
+main a {
+    font-size: 1rem;
+     text-transform: uppercase;
+     padding-top: .5em;
+     padding-bottom: .5em;
+     width: 20ch;
+    border-radius: 3px solid transparent;
+    border-image: linear-gradient(90deg, blue, lightblue, turquoise);
+    border-image-slice: 30%;
+    display: inline-block;
+    color: inherit;
+    text-shadow: 1px 1px #303030;
+    text-decoration: none;
+    border-width: 0;
+    padding-top: calc(.5em + 3px);
+    padding-bottom: calc(.5em + 3px);
+    width: calc(20ch + 5px);
+    background: hotpink;
+    border-radius: 2em;
+}
+/*
+
+main a:hover {
+    border-width: 0;
+    padding-top: calc(.5em + 3px);
+    padding-bottom: calc(.5em + 3px);
+    width: calc(20ch + 5px);
+    background: linear-gradient(90deg, blue, lightblue, turquoise);
+    border-radius: 2em;
+}
