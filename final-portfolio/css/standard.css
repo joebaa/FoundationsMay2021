@@ -1,6 +1,6 @@
 html, body {
     font-family: 'Nanum Gothic', sans-serif;
-    background-color: #white;
+    background-color: white;
     color: darkgrey;
     margin: 0;
 }
@@ -9,19 +9,51 @@ html, body {
     padding: 20px;
 }
 
+#home-main {
+    padding-left: 2em;
+    text-align: left;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+aside a {
+    color: darkgrey;
+    text-decoration: underline;
+}
+aside a:hover {
+    color: #CAE7DF;
+}
 .container {
     width: 70%;
     height: 20vh;
-    align-items: center;
+    align-items: left;
     color: darkgrey;
     background-color: white;
     margin-top: 7vh;
-    border: solid 1px #2A3166;
+   
+}
+.container a {
+    color: darkgrey;
+    text-decoration: underline;
+}
+.container a:hover {
+    color: #CAE7DF;
 }
 #div2 {
     margin-top: 20vh;
     width: 70%;
+    color: grey;
+   
 
+}
+#div2 a {
+    color: darkgrey;
+    text-decoration: underline;
+}
+#div2 a:hover {
+    color: #CAE7DF;
 }
 
 #banner {
@@ -29,14 +61,12 @@ html, body {
     background-color: #CAE7DF;
     text-align: center;
     list-style-type: none;
-    display: flex;
     font-size: 1em;
     color: white;
-    justify-content: space-around;
     text-decoration: none;
 }
 
-#banner a {
+nav a {
     margin-left: 3vw;
     margin-right: 3vw;
     font-size: 2em;
@@ -46,10 +76,11 @@ html, body {
     color: white;
     text-decoration: none;
     text-align: center;
-    display: inline-flexbox;
-    justify-content: space-between;
     font-size: 2.5em;
 
+}
+ul {
+    list-style-position: inside;
 }
 a {
     text-decoration: none;
@@ -57,9 +88,6 @@ a {
 }
 
 h1 {
-    text-align: center;
-}
-h2 {
     text-align: center;
 }
 
@@ -70,20 +98,60 @@ aside {
     align-content: center;
     padding: 30px;
     width: 30%;
-    position: ;
-    border-left: ;
 }
 #totheright {
     text-align: center;
-    top: -30%;
 }
-
-nav:after {
-    content: '';
-    display: block;
-    clear: both
-  }
 
   p {
       text-align: center;
   }
+/*
+About
+*/
+.mystory {
+    width: auto;
+    height: auto;
+    align-items: left;
+    color: darkgrey;
+    background-color: white;
+    margin-top: 7vh;
+    padding-left: 30px;
+}
+
+#placeholder {
+    float: right;
+    clear: left;
+    height: 70vh;
+    padding-right: 10px;
+}
+
+#strength {
+    text-align: center;
+}
+
+#passion {
+    padding-left: 105px;
+
+}
+#journey {
+    text-align: center;
+}
+/* 
+Contact
+*/
+
+#contact-form {
+    width: 100%;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    font-size: 1em;
+}
+#contact-heading {
+    font-size: 2em;
+}
+
+#information {
+    color: blue;
+}

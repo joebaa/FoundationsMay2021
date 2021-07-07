@@ -67,23 +67,14 @@ main {
 
 main a {
     font-size: 1rem;
-     text-transform: uppercase;
-     padding-top: .5em;
-     padding-bottom: .5em;
-     width: 20ch;
-    border-radius: 3px solid transparent;
-    border-image: linear-gradient(90deg, blue, lightblue, turquoise);
-    border-image-slice: 30%;
+    text-transform: uppercase;
     display: inline-block;
     color: inherit;
     text-shadow: 1px 1px #303030;
     text-decoration: none;
-    border-width: 0;
-    padding-top: calc(.5em + 3px);
-    padding-bottom: calc(.5em + 3px);
-    width: calc(20ch + 5px);
     background: hotpink;
     border-radius: 2em;
+    pad
 }
 /*
 
