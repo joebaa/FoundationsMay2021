@@ -1,0 +1,14 @@
+#menu {
+    display: block;
+    position: fixed;
+    top: 6vh;
+    right: 2em;
+}
+html, body {
+    font-size: 12px;
+}
+nav {
+    display: none;
+}
+
+
