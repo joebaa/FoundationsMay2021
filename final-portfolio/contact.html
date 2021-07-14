@@ -24,37 +24,45 @@
     
     </header>
     <section>
-        <div>
+        <div id="contactme">
             <h1 id="contact-heading">Conact Me:</h1>
             <p>Whether you're interested in hiring me for a quick freelance job, looking for a full-time developer or 
-                for any other reason,<br> feel free to reach out to me via email or fill out the google form and I can get
+                for any other reason,<br> feel free to reach out to me via email or fill out the form below and I can get
                 back to you as soon as possible.
                 
             </p>
-            <p id="information">Email: Joe_brunk@icloud.com<br>
-            Linked-in:</p>
+            <p id="information">Email: Joe_brunk@icloud.com<br></p>
+            
         </div>
-        <div>
+        <div id="contact-box">
+
             <form id="contact-form">
-                Name:<br>
+                <form action="mailto:joe_brunk@icloud.com"
+                method="POST" enctype="multipart/form-data" name="EmailForm">
+                <label>Name:</label>
                 <input type="text" name="Name">
                 <br>
-                Company:<br>
+                <label>Company:</label>
                 <input type="text" name="Name">
                 <br>
-                Reason for Contact:<br>
+                <label>Reason for Contact:</label>
                 <input type="text" name="reason">
                 <br>
-                Email:<br>
+                <label>Email:</label>
                 <input type="text" name="email">
                 <br>
-                Comments:<br>
+                <label>Comments:</label>
                 <input type="text" name="Name">
                 <br><br>
                 <input type="submit" value="Submit">
               </form>
         </div>
     </section>
+    <footer>
+        <div class="footer1">
+            <p>Joseph Brunkhorst Web Development</p>
+        </div>
+    </footer>
    
 </body>
 </html>

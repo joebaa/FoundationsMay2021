@@ -8,52 +8,76 @@ html, body {
     font-size: 4em;
     padding: 20px;
 }
-
-#home-main {
+#home-main h2 {
+    text-decoration: underline;
+}
+/**#home-main {
     padding-left: 2em;
     text-align: left;
+    width: 60%;
+    height: 20vh;
+    color: darkgrey;
+    background-color: white;
+    margin-top: 7vh;
+    display: flex;
+    justify-content: flex-start;
+    
 }
-
+**/
+#aboutme {
+    margin-top: 15vh;
+    position: relative;
+}
 nav {
     display: flex;
     justify-content: space-between;
 }
+
+nav a:hover {
+    color: darkgrey;
+    text-decoration: underline;
+}
+/** home body **/
 aside a {
     color: darkgrey;
     text-decoration: underline;
 }
 aside a:hover {
-    color: #CAE7DF;
+    color: white;
+    text-decoration: underline;
 }
-.container {
-    width: 70%;
-    height: 20vh;
-    align-items: left;
-    color: darkgrey;
-    background-color: white;
-    margin-top: 7vh;
-   
+
+#contactpic {
+    margin-top: 5vh;
+    width: 28em;
+    height: 25vh;
+    margin-right: 6em;
 }
+
 .container a {
     color: darkgrey;
     text-decoration: underline;
 }
 .container a:hover {
-    color: #CAE7DF;
+    color: white;
 }
-#div2 {
-    margin-top: 20vh;
-    width: 70%;
-    color: grey;
-   
 
+.pic {
+    margin-top: 1em;
+    width: 40em;
+    height: 35vh;
+    
 }
-#div2 a {
-    color: darkgrey;
-    text-decoration: underline;
-}
-#div2 a:hover {
-    color: #CAE7DF;
+.teaser {
+    width: 50%;
+    height: 50vh;
+    padding: 2em;
+    margin: 3em;
+    border: 2px solid darkgrey;
+    background-color: #CAE7DF;
+    color: white;
+
+    
 }
 
 #banner {
@@ -64,6 +88,7 @@ aside a:hover {
     font-size: 1em;
     color: white;
     text-decoration: none;
+    border-bottom: 2px solid darkgrey;;
 }
 
 nav a {
@@ -92,15 +117,19 @@ h1 {
 }
 
 aside {
-    background-color: white;
+    background-color: #CAE7DF;
     float: right;
     height: 50vh;
     align-content: center;
     padding: 30px;
     width: 30%;
+    margin: 3em;
+    border: 2px solid darkgrey;
+    color: white;
 }
 #totheright {
     text-align: center;
+    
 }
 
   p {
@@ -109,49 +138,167 @@ aside {
 /*
 About
 */
+#about {
+    border:2px solid darkgrey;
+    width: 57%;
+    margin-right: 5em;
+    margin-left: 0;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    padding-right: .5em;
+    background-color:#CAE7DF;
+}
 .mystory {
     width: auto;
     height: auto;
     align-items: left;
-    color: darkgrey;
-    background-color: white;
-    margin-top: 7vh;
+    color: white;
+    background-color:#CAE7DF;;
+    margin-top: 3vh;
     padding-left: 30px;
 }
 
 #placeholder {
     float: right;
     clear: left;
-    height: 70vh;
+    height: 50vh;
     padding-right: 10px;
+    margin-top: 3vh;
 }
+
 
 #strength {
     text-align: center;
+    height: 60vh;
+    background-color: #CAE7DF;
+    border: 2px solid darkgrey;
+    color: white;
+    height: 20vh;
+    width: 57%;
+    left: 0;
+    margin-left: 1em;
+    margin-bottom: 5em;
+    position: relative;
 }
 
 #passion {
-    padding-left: 105px;
+    padding-left: 10em;
+
 
 }
 #journey {
     text-align: center;
+
 }
 /* 
 Contact
 */
+#information:hover {
+    color: white;
 
-#contact-form {
+}
+#contactme {
+    background-color: #CAE7DF;
+    color: white;
+    border: 2px solid darkgrey;
+    margin-top: 2vh;
+    margin-left: 15em;
+    margin-right: 15em;
+}
+#contact-box {
+    display: flex;
     width: 100%;
+    left: 45%;
+    top: 50%;
+    position: sticky;
+    
+}
+#contact-form {
+    
     text-align: center;
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 10em;
     font-size: 1em;
+    display: flex;
+    left: 45%;
+    top: 50%;
+    position: sticky;
+    justify-content: space-between;
+    flex-direction: column;
+   
+
 }
 #contact-heading {
     font-size: 2em;
+    text-decoration: underline;
 }
 
 #information {
     color: blue;
+    text-decoration: underline;
+}
+
+#contact-form input {
+    margin-top: 3em;
+}
+
+
+
+/** MY WORK **/
+#introduction {
+    background-color: #CAE7DF;
+    color: white;
+    border: 2px solid darkgrey;
+    margin-top: 2em; 
+    margin-right: 20em;
+    margin-left: 20em;
+    margin-bottom: 2em;
+}
+.photos {
+    height: 50vh;
+    width: 50em;
+    margin-bottom: 2vh;
+    margin-left: 20em;
+    border: 3px solid darkgrey;
+}
+#vertical {
+    padding-left: 35em;
+    margin-bottom: 2vh;
+    
+}
+
+/** Resume **/
+.resumesec {
+    background: #CAE7DF;
+    color: white;
+    margin: 5em;
+    border: 3px solid darkgrey;
+    padding-bottom: 2em;
+}
+.page-heading {
+    font-size: 3em;
+    
+}
+#hireme:hover {
+    text-decoration: underline;
+    color: darkgrey;
+}
+
+
+
+
+/** FOOTER **/
+footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 8vh;
+    background-color: #CAE7DF;
+    border-top: 2px solid darkgrey;
+}
+
+footer p {
+    padding-top: 1vh;
+    margin-left: 5em;
 }
