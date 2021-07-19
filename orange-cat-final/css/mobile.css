@@ -1,0 +1,98 @@
+body {
+    background-image: url('../images/kitten-v.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-size: 11px;
+    max-width: 100%;
+    
+}
+#orange-header {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 2.5em;
+}
+    
+nav {
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    font-size: 2.5em;
+    margin: 2vh;
+    display: flex;
+    justify-content: space-between;
+    margin-right: .7em;
+}
+nav button {
+    font-family: 'Montserrat';
+    font-size: 15px;
+    text-decoration: none;
+    color: orange;
+    padding: 2px;
+    position: relative;
+    border: none;
+    background-color: none;
+    background: none;
+    cursor: pointer;
+    margin-left: 10px;
+    padding: 0;
+    font-weight: 500;
+    margin-right: .7em;
+    margin-bottom: 2vh;
+}
+nav a {
+    font-family: 'Montserrat';
+    font-size: 15px;
+    text-decoration: none;
+    color: orange;
+    padding: 2px;
+    position: relative;
+    border: none;
+    background-color: none;
+    background: none;
+    cursor: pointer;
+    margin-left: 10px;
+    padding: 0;
+    font-weight: 500;
+    margin-right: .7em;
+    margin-bottom: 2vh;
+}
+
+#onlyon {
+    
+    font-size: 1.6em;
+    position: relative;
+    margin-left: 1em;
+    margin-top: 6vh;
+}
+#netflixpic {
+    top: 12%;
+    left: 20%;
+    margin-left: .5em;
+    height: 3vh;
+    width: 4em;
+}
+
+table {
+    color: orange;
+    width: 100%;
+    background-color: black;
+    opacity: .7;
+    padding: 1em;
+    top: 40%;
+    left: 0;
+    position: absolute;
+    font-size: 1.5em;
+    font-weight: 500;
+    border: 3px solid orange;
+    border-radius: 1em;
+    border-collapse: separate;
+    border-spacing: 0px;
+    height: 15vh;
+}
+tr {
+    margin: 2em;
+}
+td {
+    margin: 3em;
+}
