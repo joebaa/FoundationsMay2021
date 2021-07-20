@@ -44,29 +44,9 @@ $(document).ready(function() {
         });
 });
 
+
 $(document).ready(function() {
-    $("#callus").pleasecall("cssAnimation1"); 
-    });
-
-//$(document).ready(function() {
-//$("#contactus").click(function() {
-  //  $("#callus").show();
-  //});
-//});
-
-
- 
-
-    // Option 2 - jQuery Smooth Scrolling
-// $('.navbar a').on('click', function (e) {
-//   if (this.hash !== '') {
-//     e.preventDefault();
-
-//     const hash = this.hash;
-
-//     $('html, body')
-//       .animate({
-//         scrollTop: $(hash).offset().top
-//       },800);
-//   }
-// });
+    $("#contactus").click(function(){
+        $(animationCss).show();
+        });
+});

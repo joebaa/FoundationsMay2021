@@ -1,14 +1,15 @@
 .smooth {
     width: 100%;
-    height: 100%;
-    /* CSS Smooth Scroll */
-    overflow-y:scroll;
+    max-height: 100%;
+    overflow-y: scroll;
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
     }
+
 section {
     scroll-snap-align: center;
 }
+
 #home {
     background-image: url("../images/playful-kitten-6683.jpg");
     background-size: cover;
@@ -24,6 +25,7 @@ section {
     margin-left: 0;
     overflow: hidden;
 }
+
 #about {
     background: url('../images/kitten-flying.jpg'); 
     background-repeat: no-repeat;
@@ -34,13 +36,18 @@ section {
     background-size: cover;
 
   }
+
 body {
     font-family: 'Montserrat';
     width: 100%;
     height: 100vh;
-    font-weight: 500;
+    font-weight: 200;
     overflow: hidden;
+    padding-bottom: 20px;
+    margin-top: 0;
+    margin-left: 0;
 }
+
 #orange-header {
     display: flex;
     justify-content: flex-start;
@@ -64,11 +71,11 @@ body {
 .netflixpic {
     position: absolute;
     top: 16%;
-    left: 9%;
+    left: 5%;
     margin-left: 1.6em;
     transition: transform .6s ease-in-out;
-    height: 5vh;
-    width: 6.5em;
+    height: 6vh;
+    width: 7em;
 }
 
 .netflixpic:hover{
@@ -88,7 +95,7 @@ nav {
 }
 nav button {
     font-family: 'Montserrat';
-    font-size: 1em;
+    font-size: .8em;
     text-decoration: none;
     color: orange;
     padding: 10px;
@@ -103,7 +110,7 @@ nav button {
 }
 nav a {
     font-family: 'Montserrat';
-    font-size: 1em;
+    font-size: .8em;
     text-decoration: none;
     color: orange;
     padding: 10px;
@@ -116,7 +123,9 @@ nav a {
     padding: 0;
     font-weight: 500;
 }
-
+footer {
+    overflow: hidden;
+}
 
 /* Contact */
 #callus {
@@ -126,37 +135,33 @@ nav a {
     background-color: black;
     opacity: .7;
     color: orange;
-    text-decoration: underline;
     padding: 2em;
     border: 3px solid orange;
     border-radius: 1em;
     border-collapse: separate;
     border-spacing: 0px;
-    
+    width: 20em;
+    height: 15vh;
+    animation-timing-function: ease;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    transform-origin: bottom;
 }
 
-#callus {
-    animation-name: cssAnimation1;
-    -webkit-transition: 3s;
-    -moz-transition: 3s;
-    -ms-transition: 3s;
-    -o-transition: 3s;
-    transition: 3s;
-    margin-left: 10%;
-    transform: rotate(720deg);
+#phonenumber {
+    text-decoration: underline;
+    color: orange;
 }
- @keyframes cssAnimation1 {
-    from {
-      -webkit-transform: rotate(0deg) scale(0) skew(0deg) translate(0px);
-    }
-    to {
-      -webkit-transform: rotate(0deg) scale(2) skew(0deg) translate(100px);
-    }
-  }
+
+i {
+    text-decoration: none;
+}
+
 
 #callus i {
     color: white;
 }
+
 #exitcontact {
     left: 90%;
     bottom: 85%;
@@ -180,14 +185,17 @@ table {
     border-spacing: 0px;
     height: 15vh;
 }
+
 tr {
     margin: 2em;
 }
+
 td {
     margin: 3em;
 }
+
 .leave {
-    background-image: url(../images/close.png);
+    background-image: url('../images/close.png');
     background-size: cover;
     border-radius: 2em;
     background-repeat: no-repeat;
@@ -216,8 +224,8 @@ td {
 #navbar button:hover {
     animation-name: bounce;
     animation-timing-function: ease;
-    animation-duration: 2s;
-    animation-iteration-count: 2;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
     transform-origin: bottom;
     cursor: url('../images/pawprint.png'), default;
 }
@@ -226,11 +234,6 @@ button:hover {
     cursor: url('../images/pawprint.png'), default;
 }
 
-@keyframes bounce {
-  0%   { transform: translateY(0); }
-  50%  { transform: translateY(-50px); }
-
-}
 /* About **/
 #aboutsillycat {
     background-image: url('../images/kitten-flying.jpg');
@@ -241,28 +244,29 @@ button:hover {
     height: 100%;
    
 }
+
 #kittendesc {
     position: sticky;
     left: 35%;
     top: 40%;
     width: 100%;
-    height: 100vh;
-    margin-left: 25em;
+    height: 30vh;
+    margin-left: 15em;
     margin-top: 23vh;
 }
+
 #kittendesc h1 {
     font-family: 'Montserrat';
     font-weight: 500;
     font-size: 2em;
     text-shadow: 1px .5px  white;
-
-
 }
+
 #navbar a:hover {
     animation-name: bounce;
     animation-timing-function: ease;
-    animation-duration: 2s;
-    animation-iteration-count: 2;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
     transform-origin: bottom;
     cursor: url('../images/pawprint.png'), default;
 }
@@ -275,4 +279,9 @@ a:hover {
   0%   { transform: translateY(0); }
   50%  { transform: translateY(-50px); }
 
+}
+
+@keyframes cssAnimation {
+  0%   { transform: translateX(0); }
+  50%  { transform: translateX(200px); }
 }
