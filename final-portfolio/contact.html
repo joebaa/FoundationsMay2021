@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/standard.css">
     <link href="css/fontawesome-all.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"  type="text/javascript" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="scripts.js" type="text/javascript"></script>
 </head>
 <body>
     <header id="banner">
@@ -34,28 +36,29 @@
             <p id="information">Email: Joe_brunk@icloud.com<br></p>
             
         </div>
-        <div id="contact-box">
+        <div class="contactbox">
 
-            <form id="contact-form">
-                <form action="mailto:joe_brunk@icloud.com"
-                method="POST" enctype="multipart/form-data" name="EmailForm">
-                <label>Name:</label>
-                <input type="text" name="Name">
+            <form method="post"  action="mailto:joe_brunk@icloud.com" class="form">
+                 
+                <input type="text" name="nameField" id="fullname" placeholder="Full Name" value="" class="fieldbox" required>
+            
+               
                 <br>
-                <label>Company:</label>
-                <input type="text" name="Name">
+                
+                <input type="text" placeholder="Reason for Contact" name="reasonField" id="reason "value="" class="fieldbox" required>
+                
                 <br>
-                <label>Reason for Contact:</label>
-                <input type="text" name="reason">
+                
+                <input  type="text" id="email" name="emailField" placeholder="Email" value="" class="fieldbox" required>
+                
                 <br>
-                <label>Email:</label>
-                <input type="text" name="email">
-                <br>
-                <label>Comments:</label>
-                <input type="text" name="Name">
+                
+                <input id="phone" placeholder="Phone Number" type="text" name="phoneField" value="" class="fieldbox" required>
+               
                 <br><br>
-                <input type="submit" value="Submit">
-              </form>
+                <input id="submit" onsubmit="return results();" type="submit" onclick="myFunction()" value="Send Information">
+    
+            </form>
         </div>
     </section>
     <footer>

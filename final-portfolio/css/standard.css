@@ -4,26 +4,26 @@ html, body {
     color: darkgrey;
     margin: 0;
 }
+
+.link::first-letter {
+    color: rgb(161, 206, 224);
+    font-size: 2em;
+}
 #name {
     font-size: 4em;
     padding: 20px;
 }
+section a:visited {
+    color: grey;
+}
 #home-main h2 {
     text-decoration: underline;
 }
-/**#home-main {
-    padding-left: 2em;
-    text-align: left;
-    width: 60%;
-    height: 20vh;
-    color: darkgrey;
-    background-color: white;
-    margin-top: 7vh;
-    display: flex;
-    justify-content: flex-start;
-    
+#respic {
+    margin-left: 2em;
 }
-**/
+
+
 #aboutme {
     margin-top: 15vh;
     position: relative;
@@ -31,20 +31,24 @@ html, body {
 nav {
     display: flex;
     justify-content: space-between;
+    opacity: 50%;
+    transition: opacity .5s ease-out;
 }
-
+nav:hover {
+    opacity: 100%;
+}
 nav a:hover {
     color: darkgrey;
     text-decoration: underline;
 }
 /** home body **/
-aside a {
-    color: darkgrey;
-    text-decoration: underline;
-}
-aside a:hover {
+
+.link a {
     color: white;
     text-decoration: underline;
+}
+.link a:hover {
+    color: grey;
 }
 
 #contactpic {
@@ -54,30 +58,41 @@ aside a:hover {
     margin-right: 6em;
 }
 
-.container a {
-    color: darkgrey;
-    text-decoration: underline;
-}
-.container a:hover {
-    color: white;
+
+#myworkpic {
+    margin-bottom: 2em;
 }
 
 .pic {
     margin-top: 1em;
     width: 40em;
-    height: 35vh;
+    height: 34vh;
     
 }
+
 .teaser {
     width: 50%;
-    height: 50vh;
+    height: 60vh;
     padding: 2em;
     margin: 3em;
     border: 2px solid darkgrey;
     background-color: #CAE7DF;
     color: white;
+}
 
+#work {
+    height: 53vh;
+}
+#teaser1 {
+    margin-top: none;
+    padding-bottom: 1em;
+    margin-left: 2.5em;
+    height: 70vh;
     
+}
+
+#teaser2 {
+    height: 53vh;
 }
 
 #banner {
@@ -139,7 +154,7 @@ aside {
 About
 */
 #about {
-    border:2px solid darkgrey;
+    border: 2px solid darkgrey;
     width: 57%;
     margin-right: 5em;
     margin-left: 0;
@@ -147,7 +162,9 @@ About
     margin-bottom: 2vh;
     padding-right: .5em;
     background-color:#CAE7DF;
+    margin-left: 1em;
 }
+
 .mystory {
     width: auto;
     height: auto;
@@ -155,36 +172,47 @@ About
     color: white;
     background-color:#CAE7DF;;
     margin-top: 3vh;
-    padding-left: 30px;
+    
+    margin-left: 1em;
 }
 
 #placeholder {
     float: right;
     clear: left;
-    height: 50vh;
-    padding-right: 10px;
-    margin-top: 3vh;
+    height: 60vh;
+    margin-right: 3em;
+    margin-top: vh;
+}
+
+.aboutheaders {
+    font-size: 2.5em;
 }
 
 
 #strength {
     text-align: center;
-    height: 60vh;
     background-color: #CAE7DF;
     border: 2px solid darkgrey;
     color: white;
     height: 20vh;
     width: 57%;
     left: 0;
+    padding-right: 10px;
     margin-left: 1em;
     margin-bottom: 5em;
     position: relative;
+    font-size: 1.1em;
+    padding-bottom: 2.8em;
 }
-
+#strength ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding-right: 25px;
+    font-size: 1.6em;
+}
 #passion {
     padding-left: 10em;
-
-
 }
 #journey {
     text-align: center;
@@ -195,42 +223,36 @@ Contact
 */
 #information:hover {
     color: white;
-
 }
 #contactme {
     background-color: #CAE7DF;
     color: white;
     border: 2px solid darkgrey;
-    margin-top: 2vh;
+    margin-top: 8vh;
     margin-left: 15em;
     margin-right: 15em;
 }
-#contact-box {
-    display: flex;
-    width: 100%;
-    left: 45%;
-    top: 50%;
-    position: sticky;
-    
+#journey::first-line {
+    font-size: 1.4em;
+  }
+
+#contactme:hover {
+    transform: rotate(.01turn);
+
 }
-#contact-form {
-    
+
+.contactbox {
     text-align: center;
     padding-top: 60px;
     padding-bottom: 10em;
     font-size: 1em;
-    display: flex;
     left: 45%;
     top: 50%;
-    position: sticky;
-    justify-content: space-between;
-    flex-direction: column;
-   
 
 }
+
 #contact-heading {
     font-size: 2em;
-    text-decoration: underline;
 }
 
 #information {
@@ -238,10 +260,27 @@ Contact
     text-decoration: underline;
 }
 
-#contact-form input {
+.form input {
+    border: 2px solid darkgrey;
+    background-color: #CAE7DF;
     margin-top: 3em;
+    color: white;
+    size: 5em;
 }
-
+label {
+    font-size: 1.5em;
+    height: 3em;
+}
+.fieldbox {
+    height: 40px;
+    width: 250px;
+    padding: 5px;
+    color: white;
+}
+#submit {
+    padding: 1em;
+    font-size: 1.5em;
+}
 
 
 /** MY WORK **/
@@ -251,8 +290,14 @@ Contact
     border: 2px solid darkgrey;
     margin-top: 2em; 
     margin-right: 20em;
-    margin-left: 20em;
+    margin-left: 23em;
     margin-bottom: 2em;
+    opacity: 70%;
+    transition: opacity .5s ease-out;
+}
+#introduction:hover {
+    background: #CAE7DF;
+    opacity: 100%;
 }
 .photos {
     height: 50vh;
@@ -277,8 +322,8 @@ Contact
 }
 .page-heading {
     font-size: 3em;
-    
 }
+
 #hireme:hover {
     text-decoration: underline;
     color: darkgrey;

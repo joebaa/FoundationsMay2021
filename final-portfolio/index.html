@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="css/standard.css">
     <link href="css/fontawesome-all.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"  type="text/javascript" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="scripts.js" type="text/javascript"></script>
     
 </head>
 <body>
@@ -28,40 +29,49 @@
     </div>
 
     <aside>
-        <h2 id="totheright">Get in Touch</h2>
-        <p>If you're interested in hiring me for a position or even 
-            just a project reach out to me:
-            </p>
-            <a href="contact.html">Contact Information</a>
-            <img src="images/contact.jpg" id="contactpic">
+        <div class="link">
+            <h2 id="totheright">Get in Touch</h2>
+            <p>If you're interested in hiring me for a position or even 
+                just a project reach out to me:
+            
+                <br><a href="contact.html">Contact Information</a></p>
+                <img src="images/contact.jpg" id="contactpic">
+        </div>
     </aside>
 
 
-<section class="home-main">
     <div class="container">
 
-        <section class="teaser">
+        <section class="teaser" id="work">
+            <div id="teaser1" class="link">
             <h2>My Work</h2>
-            <p>I have experience with HTML, CSS, JavaScript and JQuery.
-                These projects showcase my expertise. 
-            <br><a href="mywork.html">Check out my
-                work here</a>!<br>
-                <img src="images/styleconhome.png" class="pic">
-        </p>
+            
+                <p>I have experience with HTML, CSS, JavaScript and JQuery.
+                    These projects showcase my expertise. 
+                <br><a href="mywork.html">Check out my
+                    work here!</a><br></p>
+                <img src="images/styleconhome.png" id="myworkpic" class="pic">
+            </div>
         </section>
-        <section class="teaser">
-            <h2>Resumé</h2>
-            <p>Work history, education and experience with web development: </p>
-            <a href="resume.html">Experience and education  <i class="fas fa-file"></i></a>
-            <img src="images/images.jpg" class="pic">
+
+    <section class="teaser" id="teaser2">
+        <div class="link">
+        <h2>Resumé</h2>
+        <p>Work history, education and experience with web development:</p>
+        <p><a href="resume.html">Experience and education<i class="fas fa-file"></i></a></p>
+            <img src="images/images.jpg" id="respic" class="pic">
         </section>
-        <section class="teaser">
+            </div>
+
+        <section class="teaser" id="teaser3">
+            <div class="link">
             <h2>About me</h2>
-            <p>
-                How and why a global pandemic sparked my passion for Web Development:
-            <a href="about.html">My Story</a>
-            <img src="images/coding.jpg" class="pic">
+                <p>
+                    How and why a global pandemic sparked my passion for Web Development:
+                <a href="about.html">My Story</a></p>
+                <img src="images/coding.jpg" class="pic">
             </p>
+        </div>
         </section>
 
     </div>
